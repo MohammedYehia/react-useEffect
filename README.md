@@ -252,7 +252,7 @@ React.useEffect( async () => {
   await api.request();
 })
 ```
-to solve this either you use a promise or create async function inside hte useEffect
+to solve this either you use a promise or create async function inside the useEffect
 
 ```js
 
@@ -273,7 +273,7 @@ React.useEffect(() => {
 ---
 
 #### Resources:
-- [A Complete Guide to useEffect](https://iqkui.com/a-complete-guide-to-useeffect/), Dan Abramov
+- [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/), Dan Abramov
 - [React Docs](https://reactjs.org/docs/hooks-effect.html)
 
 ----
