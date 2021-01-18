@@ -276,7 +276,7 @@ _Hints_:
 
 **_Exercise 3:_**
 
-use [GIPHY API](https://developers.giphy.com/docs/api) to fetch gifs from the user input by listining to the input event `onChange` so on every change of the value you should be sending a request to the `api` and you should clean up the previous requests to avoid any problem.
+Use [GIPHY API](https://developers.giphy.com/docs/api) to fetch gifs from the user input by listining to the input event `onChange` so on every change of the value you should be sending a request to the `api` and you should clean up the previous requests to avoid any problem.
 
 (imagine this scenario you wrote the word `car` and wrote another character which change the word to `cart` and knowing that with every chrachter you are firing a new request send to the api and for some reasons the second request(`cart`) got back with the response faster than the first one(`car`) then the first one will override the second one and the gifs for `car` will be shown rather than the gifs for `cart`)
 
@@ -284,14 +284,14 @@ use [GIPHY API](https://developers.giphy.com/docs/api) to fetch gifs from the us
 
 **_Exercise 4:_**
 
-use https://robohash.org/ `api` to generate unique images from any text you enter.
+Use https://robohash.org/ `api` to generate unique images from any text you enter.
 
 ---
 
 **_Exercise 5:_**
 
-create a complete user profile from [randomUser](https://randomuser.me/) `api` or [jsonplaceholder](https://jsonplaceholder.typicode.com/users) with edit/delete ... and css style / loading ?
+Create a complete user profile from [randomUser](https://randomuser.me/) `api` or [jsonplaceholder](https://jsonplaceholder.typicode.com/users) with edit/delete ... and css style / loading ?
 
-stretch goal: maybe you can use robohash.org `api` to generate random avatar for the user base on its username
+Stretch Goal: maybe you can use robohash.org `api` to generate random avatar for the user base on its username
 
 ---
