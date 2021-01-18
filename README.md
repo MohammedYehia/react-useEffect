@@ -305,9 +305,9 @@ Try to create this effect
 
 ***Exercise 3:***
 
-use Yandex translate API to translate the input value from english to arabic by listining to the inpput event `onChange` so on every change of the value you should be sending a request to the api and you should clean up the previous requests to avoid any problem
+use [GIPHY API](https://developers.giphy.com/docs/api) to fetch gifs from the user input by listining to the input event `onChange` so on every change of the value you should be sending a request to the `api` and you should clean up the previous requests to avoid any problem.
 
-(imagine this scenario you wrote the word `car` and wrote another character which change the word to `cart` and knowing that with every chrachter you are firing a new request to the api and for some reasons the second request(`cart`) got back with the response faster than the first one(`car`) then the first one will override the second one and the translation for `car` will be shown rather than the translation for `cart`)
+(imagine this scenario you wrote the word `car` and wrote another character which change the word to `cart` and knowing that with every chrachter you are firing a new request send to the api and for some reasons the second request(`cart`) got back with the response faster than the first one(`car`) then the first one will override the second one and the gifs for `car` will be shown rather than the gifs for `cart`)
 
 ---
 
