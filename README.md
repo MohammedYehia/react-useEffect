@@ -276,11 +276,10 @@ React.useEffect(() => {
 - [A Complete Guide to useEffect](https://iqkui.com/a-complete-guide-to-useeffect/), Dan Abramov
 - [React Docs](https://reactjs.org/docs/hooks-effect.html)
 
-<br/>
-<br/>
----
+----
 
 ***Exercise 1:***
+
 This exercise will be another way to show you the benefit of returning the cleanup function:
 1. Create a `count` state using `useState` hook.
 2. Use any JSX tag to show the count value on the screen(ex: p, span,...).
@@ -294,6 +293,7 @@ This exercise will be another way to show you the benefit of returning the clean
 ---
 
 ***Exercise 2:***
+
 Try to create this effect
 *Hints*: 
 * use the dom `mousemove` eventListener, and don't forget to remove it with clean up.
@@ -304,6 +304,7 @@ Try to create this effect
 ---
 
 ***Exercise 3:***
+
 use Yandex translate API to translate the input value from english to arabic by listining to the inpput event `onChange` so on every change of the value you should be sending a request to the api and you should clean up the previous requests to avoid any problem
 
 (imagine this scenario you wrote the word `car` and wrote another character which change the word to `cart` and knowing that with every chrachter you are firing a new request to the api and for some reasons the second request(`cart`) got back with the response faster than the first one(`car`) then the first one will override the second one and the translation for `car` will be shown rather than the translation for `cart`)
@@ -311,11 +312,16 @@ use Yandex translate API to translate the input value from english to arabic by 
 ---
 
 ***Exercise 4:***
-use https://robohash.org/ api to generate unique images from any text you enter.
 
-***Exercise 4:***
-create a complete user profile from [randomUser](https://randomuser.me/) api or [jsonplaceholder](https://jsonplaceholder.typicode.com/users) with edit/delete ... and css style / loading ?
-stretch goal: maybe you can use robohash.org api to generate random avatar for the user base on its username
+use https://robohash.org/ `api` to generate unique images from any text you enter.
+
+---
+
+***Exercise 5:***
+
+create a complete user profile from [randomUser](https://randomuser.me/) `api` or [jsonplaceholder](https://jsonplaceholder.typicode.com/users) with edit/delete ... and css style / loading ?
+
+stretch goal: maybe you can use robohash.org `api` to generate random avatar for the user base on its username
 
 
 ---
