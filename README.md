@@ -23,9 +23,9 @@ useEffect(() => {
 });
 ```
 
-Let's try and change the title of our page with our previous whenever the counter changes
+Let's try and change the title of our page from our previous workshop, whenever the counter changes.
 
-changeing the title of the page will require us to access the dom which is a side effect so we will need to use`useEffect`
+Changeing the title of the page will require us to access the dom which is a side effect so we will need to use`useEffect`
 
 ```js
 function Counter() {
