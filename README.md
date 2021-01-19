@@ -130,7 +130,7 @@ function Counter() {
 
 so the dependency array will help us to stop the useEffect from running unless the dependency array elements changed its values.
 
-now let's assume that you were creating a timer using `setInterval` and this timer should update the state every 5 seconds what will happen if you moved from the component (unmount) before the timer timer return, you will get this Warning on the console `Can't perform a React state update on an unmounted component.`
+now let's assume that you were creating a timer using `setInterval` and this timer should update the state every 5 seconds what will happen if you moved from the component (unmount) before the timer return, you will get this Warning on the console `Can't perform a React state update on an unmounted component.`
 
 To demonstrate this we will create main compoent and create a Counter component with a button to show/hide the Counter, after creating the app try to click on `Turn Counter off` and watch the warning on the console after 5 seconds, this could cause [memory leak](https://en.wikipedia.org/wiki/Memory_leak) and some performance issues.
 
