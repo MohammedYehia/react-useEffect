@@ -231,9 +231,10 @@ now you will notice that the Warning has gone and interval stopped.
 
 - The useEffect will always run on the initial render.
 - We can control the Effect using the second param
-  - useEffect(cb) —> runs when any state changes
-  - useEffect(cb, []) —> runs on mounting only
-  - useEffect(cb, [prop1, state]) // runs when one of the dependency changes
+  - `useEffect(cb)` —> By default, it runs both after the first render and after every update
+  - `useEffect(cb, [])` —> Runs on mounting only (once)
+  - `useEffect(cb, [prop1, state])` —> Runs when one of the dependency changes
+  
 - Cleanup function will always runs before useEffect on re-render
 - If you used React classes and lifecycle methods then useEffect will replace the three methods `componentDidMount` , `componentDidUpdate` , `componentWillUnmount`.
 - You can use [linter rules](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) to help you with the dependency array(this is included by default with [CRA](https://create-react-app.dev/))
