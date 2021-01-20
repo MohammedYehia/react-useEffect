@@ -234,10 +234,39 @@ now you will notice that the Warning has gone and interval stopped.
   - `useEffect(cb)` —> By default, it runs both after the first render and after every update
   - `useEffect(cb, [])` —> Runs on mounting only (once)
   - `useEffect(cb, [prop1, state])` —> Runs when one of the dependency changes
-  
 - Cleanup function will always runs before useEffect on re-render
 - If you used React classes and lifecycle methods then useEffect will replace the three methods `componentDidMount` , `componentDidUpdate` , `componentWillUnmount`.
 - You can use [linter rules](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) to help you with the dependency array(this is included by default with [CRA](https://create-react-app.dev/))
+
+---
+
+- You can't use `await` directly inside the useEffect callback
+
+```js
+// this will give you an error
+React.useEffect(async () => {
+  await api.request();
+});
+```
+
+to solve this either you use a promise or create async function inside the useEffect
+
+```js
+
+React.useEffect(() => {
+  // Using async/await
+  async function getData() {
+    await api.request();
+  }
+
+  getData();
+
+  // OR using promise
+
+  api.request().then(....)
+
+})
+```
 
 ---
 
